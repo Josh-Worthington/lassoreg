@@ -1,0 +1,10 @@
+Package: lassoreg
+Type: Package
+Title: Lasso Regression
+Version: 0.1.0
+Author: Joshua Worthington
+Maintainer: Joshua Worthington <codingjosh@gmail.com>
+Description: An implementation of lasso regression using R, which constructs a model made up of the coefficients for the model, the lambda value reached to achieve this, and the mean squared error of the model.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true

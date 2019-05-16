@@ -1,0 +1,7 @@
+export(lasso)
+export(lasso.default)
+export(naive.lasso)
+export(plot.lasmod)
+export(plotmse.lasmod)
+export(predict.lasmod)
+export(summary.lasmod)
