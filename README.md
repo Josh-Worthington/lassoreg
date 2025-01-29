@@ -41,6 +41,21 @@ Mean Squared Error:
 [1] 41.71765
 ```
 
+### plot.lasmod and plotmse.lasmod
+The `plot.lasmod` function returns a graph which plots how the coefficients changed during the course of training, coefficient values against lambda, e.g.
+```
+> plot.lasmod(lasso_model)
+```
+creates this graph:
+![CoefficientsGraph](https://github.com/user-attachments/assets/4f70b936-a3ea-41ae-8e8b-b40bcee6c4cf)
+
+Whereas the `plotmse.lasmod` function returns a graph which plots how the mean squared error changed during the course of training, MSE against lambda, e.g.
+```
+> plotmse.lasmod(lasso_model)
+```
+creates this graph:
+![MSEGraph](https://github.com/user-attachments/assets/67d53fab-24eb-4536-ac81-c71ee1c7d472)
+
 ### summary.lasmod
 The `summary.lasmod` function takes the given `lasmod` object, and prints a summary of the training process and result including the lambdas used during training, coefficients (betas) resulting from that lambda, MSEs with that lambda, the final chosen lambda and the cofficients of the chosen lambda, e.g.
 ```
@@ -85,17 +100,4 @@ The `predict.lasmod` function takes the given `lasmod` object, and predicts the 
 ```
 The actual life expectancy for that row was 65 to those interested.
 
-### plot.lasmod and plotmse.lasmod
-The `plot.lasmod` function returns a graph which plots how the coefficients changed during the course of training, coefficient values against lambda, e.g.
-```
-> plot.lasmod(lasso_model)
-```
-creates this graph:
-![CoefficientsGraph](https://github.com/user-attachments/assets/4f70b936-a3ea-41ae-8e8b-b40bcee6c4cf)
 
-Whereas the `plotmse.lasmod` function returns a graph which plots how the mean squared error changed during the course of training, MSE against lambda, e.g.
-```
-> plotmse.lasmod(lasso_model)
-```
-creates this graph:
-![MSEGraph](https://github.com/user-attachments/assets/67d53fab-24eb-4536-ac81-c71ee1c7d472)
